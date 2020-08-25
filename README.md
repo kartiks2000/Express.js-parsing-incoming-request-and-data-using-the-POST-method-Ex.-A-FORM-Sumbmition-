@@ -15,4 +15,6 @@ Express.js parsing incoming request and data using the POST method (Ex. A FORM S
 
 // below code used to parse the body in "req.body" so that we could recieve the data entered by the user and then use it
 
+const bodyparser = require('body-parser');
+
 app.use(bodyparser.urlencoded({extended:false}))
